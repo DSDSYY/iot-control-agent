@@ -1,0 +1,40 @@
+services:
+  broker:
+    image: eclipse-mosquitto:2
+    container_name: iot-control-broker
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - mosquitto-data:/mosquitto/data
+    restart: unless-stopped
+
+  simulator:
+    build: .
+    container_name: iot-control-simulator
+    command: ["python", "device_simulator.py"]
+    environment:
+      MQTT_BROKER: broker
+      MQTT_PORT: "1883"
+    depends_on:
+      - broker
+    restart: unless-stopped
+
+  agent:
+    build: .
+    container_name: iot-control-agent
+    command: ["python", "app.py"]
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      MQTT_BROKER: broker
+      MQTT_PORT: "1883"
+    depends_on:
+      - broker
+      - simulator
+    restart: unless-stopped
+
+volumes:
+  mosquitto-data:

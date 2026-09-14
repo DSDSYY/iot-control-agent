@@ -1,0 +1,1633 @@
+{
+  "summary": {
+    "total_cases": 40,
+    "intent_success": 40,
+    "intent_accuracy": 100.0,
+    "tool_success": 40,
+    "tool_success_rate": 100.0,
+    "task_success": 40,
+    "task_success_rate": 100.0,
+    "average_latency_ms": 40.2,
+    "p95_latency_ms": 36.8,
+    "metrics_before": {
+      "tool_calls_total": 0,
+      "tool_calls_success": 0,
+      "tool_calls_failed": 0,
+      "tool_call_retries": 0,
+      "tool_call_success_rate": 0.0,
+      "tool_call_avg_latency_ms": 0.0,
+      "tool_call_p95_latency_ms": 0.0
+    },
+    "metrics_after": {
+      "tool_calls_total": 43,
+      "tool_calls_success": 43,
+      "tool_calls_failed": 0,
+      "tool_call_retries": 0,
+      "tool_call_success_rate": 100.0,
+      "tool_call_avg_latency_ms": 6.9,
+      "tool_call_p95_latency_ms": 2.2
+    }
+  },
+  "results": [
+    {
+      "id": "query-temp-01",
+      "category": "query_temperature",
+      "message": "现在温度多少？",
+      "reply": "当前温度 30.0°C",
+      "latency_ms": 733.2,
+      "expected": {
+        "action": "query",
+        "target": "temp_01",
+        "command": "",
+        "keywords": [
+          "温度",
+          "°C",
+          "度"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "temp_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "sensor_id": "temp_01",
+          "value": 30.0,
+          "ts": 1789406802885
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-temp-02",
+      "category": "query_temperature",
+      "message": "temp_01 当前温度",
+      "reply": "当前温度 30.0°C",
+      "latency_ms": 12.7,
+      "expected": {
+        "action": "query",
+        "target": "temp_01",
+        "command": "",
+        "keywords": [
+          "温度",
+          "°C",
+          "度"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "temp_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "sensor_id": "temp_01",
+          "value": 30.0,
+          "ts": 1789406802885
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-temp-03",
+      "category": "query_temperature",
+      "message": "帮我看看温度",
+      "reply": "当前温度 30.0°C",
+      "latency_ms": 12.0,
+      "expected": {
+        "action": "query",
+        "target": "temp_01",
+        "command": "",
+        "keywords": [
+          "温度",
+          "°C",
+          "度"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "temp_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "sensor_id": "temp_01",
+          "value": 30.0,
+          "ts": 1789406802885
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-temp-04",
+      "category": "query_temperature",
+      "message": "温度传感器读数是多少",
+      "reply": "当前温度 30.0°C",
+      "latency_ms": 12.2,
+      "expected": {
+        "action": "query",
+        "target": "temp_01",
+        "command": "",
+        "keywords": [
+          "温度",
+          "°C",
+          "度"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "temp_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "sensor_id": "temp_01",
+          "value": 30.0,
+          "ts": 1789406802885
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-temp-05",
+      "category": "query_temperature",
+      "message": "查一下室内温度",
+      "reply": "当前温度 30.0°C",
+      "latency_ms": 12.3,
+      "expected": {
+        "action": "query",
+        "target": "temp_01",
+        "command": "",
+        "keywords": [
+          "温度",
+          "°C",
+          "度"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "temp_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "sensor_id": "temp_01",
+          "value": 30.0,
+          "ts": 1789406802885
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-temp-06",
+      "category": "query_temperature",
+      "message": "现在多少度",
+      "reply": "当前温度 30.0°C",
+      "latency_ms": 13.1,
+      "expected": {
+        "action": "query",
+        "target": "temp_01",
+        "command": "",
+        "keywords": [
+          "温度",
+          "°C",
+          "度"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "temp_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "sensor_id": "temp_01",
+          "value": 30.0,
+          "ts": 1789406802885
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-temp-07",
+      "category": "query_temperature",
+      "message": "temp_01 最新数据",
+      "reply": "当前温度 30.0°C",
+      "latency_ms": 23.0,
+      "expected": {
+        "action": "query",
+        "target": "temp_01",
+        "command": "",
+        "keywords": [
+          "温度",
+          "°C",
+          "度"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "temp_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "sensor_id": "temp_01",
+          "value": 30.0,
+          "ts": 1789406802885
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-temp-08",
+      "category": "query_temperature",
+      "message": "温度有没有超过28度",
+      "reply": "当前温度 30.0°C",
+      "latency_ms": 12.4,
+      "expected": {
+        "action": "query",
+        "target": "temp_01",
+        "command": "",
+        "keywords": [
+          "温度",
+          "°C",
+          "度"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "temp_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "sensor_id": "temp_01",
+          "value": 30.0,
+          "ts": 1789406802885
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-temp-09",
+      "category": "query_temperature",
+      "message": "给我最近一次温度",
+      "reply": "当前温度 30.0°C",
+      "latency_ms": 30.4,
+      "expected": {
+        "action": "query",
+        "target": "temp_01",
+        "command": "",
+        "keywords": [
+          "温度",
+          "°C",
+          "度"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "temp_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "sensor_id": "temp_01",
+          "value": 30.0,
+          "ts": 1789406802885
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-temp-10",
+      "category": "query_temperature",
+      "message": "屋子里热不热，温度多少？",
+      "reply": "当前温度 30.0°C",
+      "latency_ms": 12.4,
+      "expected": {
+        "action": "query",
+        "target": "temp_01",
+        "command": "",
+        "keywords": [
+          "温度",
+          "°C",
+          "度"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "temp_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "sensor_id": "temp_01",
+          "value": 30.0,
+          "ts": 1789406802885
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-fan-01",
+      "category": "query_fan_status",
+      "message": "风扇现在什么状态？",
+      "reply": "风扇当前状态为 ON",
+      "latency_ms": 11.9,
+      "expected": {
+        "action": "query",
+        "target": "fan_01",
+        "command": "",
+        "keywords": [
+          "风扇",
+          "ON",
+          "OFF",
+          "开启",
+          "关闭"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "fan_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "status": "ON"
+        },
+        "tool_success": true,
+        "final_answer": "风扇当前状态为 ON"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-fan-02",
+      "category": "query_fan_status",
+      "message": "fan_01 开着吗？",
+      "reply": "风扇当前状态为 ON",
+      "latency_ms": 22.6,
+      "expected": {
+        "action": "query",
+        "target": "fan_01",
+        "command": "",
+        "keywords": [
+          "风扇",
+          "ON",
+          "OFF",
+          "开启",
+          "关闭"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "fan_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "status": "ON"
+        },
+        "tool_success": true,
+        "final_answer": "风扇当前状态为 ON"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-fan-03",
+      "category": "query_fan_status",
+      "message": "帮我看看风扇是开还是关",
+      "reply": "风扇当前状态为 ON",
+      "latency_ms": 12.1,
+      "expected": {
+        "action": "query",
+        "target": "fan_01",
+        "command": "",
+        "keywords": [
+          "风扇",
+          "ON",
+          "OFF",
+          "开启",
+          "关闭"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "fan_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "status": "ON"
+        },
+        "tool_success": true,
+        "final_answer": "风扇当前状态为 ON"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-fan-04",
+      "category": "query_fan_status",
+      "message": "电扇现在开着没有",
+      "reply": "风扇当前状态为 ON",
+      "latency_ms": 30.6,
+      "expected": {
+        "action": "query",
+        "target": "fan_01",
+        "command": "",
+        "keywords": [
+          "风扇",
+          "ON",
+          "OFF",
+          "开启",
+          "关闭"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "fan_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "status": "ON"
+        },
+        "tool_success": true,
+        "final_answer": "风扇当前状态为 ON"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-fan-05",
+      "category": "query_fan_status",
+      "message": "查询风扇状态",
+      "reply": "风扇当前状态为 ON",
+      "latency_ms": 12.5,
+      "expected": {
+        "action": "query",
+        "target": "fan_01",
+        "command": "",
+        "keywords": [
+          "风扇",
+          "ON",
+          "OFF",
+          "开启",
+          "关闭"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "fan_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "status": "ON"
+        },
+        "tool_success": true,
+        "final_answer": "风扇当前状态为 ON"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-fan-06",
+      "category": "query_fan_status",
+      "message": "风扇关了吗",
+      "reply": "风扇当前状态为 ON",
+      "latency_ms": 28.4,
+      "expected": {
+        "action": "query",
+        "target": "fan_01",
+        "command": "",
+        "keywords": [
+          "风扇",
+          "ON",
+          "OFF",
+          "开启",
+          "关闭"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "fan_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "status": "ON"
+        },
+        "tool_success": true,
+        "final_answer": "风扇当前状态为 ON"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-fan-07",
+      "category": "query_fan_status",
+      "message": "fan_01 当前状态",
+      "reply": "风扇当前状态为 ON",
+      "latency_ms": 30.6,
+      "expected": {
+        "action": "query",
+        "target": "fan_01",
+        "command": "",
+        "keywords": [
+          "风扇",
+          "ON",
+          "OFF",
+          "开启",
+          "关闭"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "fan_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "status": "ON"
+        },
+        "tool_success": true,
+        "final_answer": "风扇当前状态为 ON"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "query-fan-08",
+      "category": "query_fan_status",
+      "message": "电风扇运行状态",
+      "reply": "风扇当前状态为 ON",
+      "latency_ms": 12.4,
+      "expected": {
+        "action": "query",
+        "target": "fan_01",
+        "command": "",
+        "keywords": [
+          "风扇",
+          "ON",
+          "OFF",
+          "开启",
+          "关闭"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "query",
+          "target_device": "fan_01",
+          "command": "",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "status": "ON"
+        },
+        "tool_success": true,
+        "final_answer": "风扇当前状态为 ON"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-on-01",
+      "category": "control_fan_on",
+      "message": "打开风扇",
+      "reply": "已打开风扇",
+      "latency_ms": 16.5,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "ON",
+        "keywords": [
+          "风扇",
+          "ON",
+          "打开",
+          "开启"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "ON",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "ON",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已打开风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-on-02",
+      "category": "control_fan_on",
+      "message": "把风扇打开",
+      "reply": "已打开风扇",
+      "latency_ms": 30.0,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "ON",
+        "keywords": [
+          "风扇",
+          "ON",
+          "打开",
+          "开启"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "ON",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "ON",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已打开风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-on-03",
+      "category": "control_fan_on",
+      "message": "开启电扇",
+      "reply": "已打开风扇",
+      "latency_ms": 21.9,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "ON",
+        "keywords": [
+          "风扇",
+          "ON",
+          "打开",
+          "开启"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "ON",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "ON",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已打开风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-on-04",
+      "category": "control_fan_on",
+      "message": "fan_01 打开",
+      "reply": "已打开风扇",
+      "latency_ms": 25.7,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "ON",
+        "keywords": [
+          "风扇",
+          "ON",
+          "打开",
+          "开启"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "ON",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "ON",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已打开风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-on-05",
+      "category": "control_fan_on",
+      "message": "帮我开一下风扇",
+      "reply": "已打开风扇",
+      "latency_ms": 22.9,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "ON",
+        "keywords": [
+          "风扇",
+          "ON",
+          "打开",
+          "开启"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "ON",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "ON",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已打开风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-on-06",
+      "category": "control_fan_on",
+      "message": "让风扇转起来",
+      "reply": "已打开风扇",
+      "latency_ms": 36.8,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "ON",
+        "keywords": [
+          "风扇",
+          "ON",
+          "打开",
+          "开启"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "ON",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "ON",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已打开风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-on-07",
+      "category": "control_fan_on",
+      "message": "打开电风扇",
+      "reply": "已打开风扇",
+      "latency_ms": 24.6,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "ON",
+        "keywords": [
+          "风扇",
+          "ON",
+          "打开",
+          "开启"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "ON",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "ON",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已打开风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-on-08",
+      "category": "control_fan_on",
+      "message": "把风扇调到ON",
+      "reply": "已打开风扇",
+      "latency_ms": 24.4,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "ON",
+        "keywords": [
+          "风扇",
+          "ON",
+          "打开",
+          "开启"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "ON",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "ON",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已打开风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-off-01",
+      "category": "control_fan_off",
+      "message": "关闭风扇",
+      "reply": "已关闭风扇",
+      "latency_ms": 23.0,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "OFF",
+        "keywords": [
+          "风扇",
+          "OFF",
+          "关闭",
+          "关掉"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "OFF",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "OFF",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已关闭风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-off-02",
+      "category": "control_fan_off",
+      "message": "把风扇关了",
+      "reply": "已关闭风扇",
+      "latency_ms": 25.4,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "OFF",
+        "keywords": [
+          "风扇",
+          "OFF",
+          "关闭",
+          "关掉"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "OFF",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "OFF",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已关闭风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-off-03",
+      "category": "control_fan_off",
+      "message": "关掉电扇",
+      "reply": "已关闭风扇",
+      "latency_ms": 29.6,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "OFF",
+        "keywords": [
+          "风扇",
+          "OFF",
+          "关闭",
+          "关掉"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "OFF",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "OFF",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已关闭风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-off-04",
+      "category": "control_fan_off",
+      "message": "fan_01 关闭",
+      "reply": "已关闭风扇",
+      "latency_ms": 28.3,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "OFF",
+        "keywords": [
+          "风扇",
+          "OFF",
+          "关闭",
+          "关掉"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "OFF",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "OFF",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已关闭风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-off-05",
+      "category": "control_fan_off",
+      "message": "帮我关一下风扇",
+      "reply": "已关闭风扇",
+      "latency_ms": 26.9,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "OFF",
+        "keywords": [
+          "风扇",
+          "OFF",
+          "关闭",
+          "关掉"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "OFF",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "OFF",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已关闭风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-off-06",
+      "category": "control_fan_off",
+      "message": "让风扇停下来",
+      "reply": "已关闭风扇",
+      "latency_ms": 15.8,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "OFF",
+        "keywords": [
+          "风扇",
+          "OFF",
+          "关闭",
+          "关掉"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "OFF",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "OFF",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已关闭风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-off-07",
+      "category": "control_fan_off",
+      "message": "关闭电风扇",
+      "reply": "已关闭风扇",
+      "latency_ms": 25.9,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "OFF",
+        "keywords": [
+          "风扇",
+          "OFF",
+          "关闭",
+          "关掉"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "OFF",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "OFF",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已关闭风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "control-fan-off-08",
+      "category": "control_fan_off",
+      "message": "把风扇调到OFF",
+      "reply": "已关闭风扇",
+      "latency_ms": 23.0,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "OFF",
+        "keywords": [
+          "风扇",
+          "OFF",
+          "关闭",
+          "关掉"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "OFF",
+          "condition": ""
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "OFF",
+          "message": "控制指令已发布"
+        },
+        "tool_success": true,
+        "final_answer": "已关闭风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "conditional-01",
+      "category": "conditional_control",
+      "message": "如果温度超过28度就打开风扇",
+      "reply": "已打开风扇",
+      "latency_ms": 45.4,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "ON",
+        "keywords": [
+          "温度",
+          "风扇",
+          "ON",
+          "OFF",
+          "超过",
+          "低于",
+          "大于",
+          "小于",
+          "未超过",
+          "未低于"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "ON",
+          "condition": "如果温度超过28度就打开风扇"
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "ON",
+          "message": "控制指令已发布",
+          "executed": true,
+          "condition": {
+            "type": "sensor_threshold",
+            "sensor_id": "temp_01",
+            "operator": ">",
+            "threshold": 28.0,
+            "current_value": 30.0,
+            "matched": true
+          }
+        },
+        "tool_success": true,
+        "final_answer": "已打开风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "conditional-02",
+      "category": "conditional_control",
+      "message": "温度高于28度时打开风扇",
+      "reply": "已打开风扇",
+      "latency_ms": 34.3,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "ON",
+        "keywords": [
+          "温度",
+          "风扇",
+          "ON",
+          "OFF",
+          "超过",
+          "低于",
+          "大于",
+          "小于",
+          "未超过",
+          "未低于"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "ON",
+          "condition": "温度高于28度时打开风扇"
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "ON",
+          "message": "控制指令已发布",
+          "executed": true,
+          "condition": {
+            "type": "sensor_threshold",
+            "sensor_id": "temp_01",
+            "operator": ">",
+            "threshold": 28.0,
+            "current_value": 30.0,
+            "matched": true
+          }
+        },
+        "tool_success": true,
+        "final_answer": "已打开风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "conditional-03",
+      "category": "conditional_control",
+      "message": "当温度大于28度就开启风扇",
+      "reply": "已打开风扇",
+      "latency_ms": 31.5,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "ON",
+        "keywords": [
+          "温度",
+          "风扇",
+          "ON",
+          "OFF",
+          "超过",
+          "低于",
+          "大于",
+          "小于",
+          "未超过",
+          "未低于"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "ON",
+          "condition": "当温度大于28度就开启风扇"
+        },
+        "tool_result": {
+          "success": true,
+          "device_id": "fan_01",
+          "command": "ON",
+          "message": "控制指令已发布",
+          "executed": true,
+          "condition": {
+            "type": "sensor_threshold",
+            "sensor_id": "temp_01",
+            "operator": ">",
+            "threshold": 28.0,
+            "current_value": 30.0,
+            "matched": true
+          }
+        },
+        "tool_success": true,
+        "final_answer": "已打开风扇"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "conditional-04",
+      "category": "conditional_control",
+      "message": "如果温度低于20度就关闭风扇",
+      "reply": "当前温度 30.0°C，未低于 20.0°C，未执行 OFF 指令",
+      "latency_ms": 12.0,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "OFF",
+        "keywords": [
+          "温度",
+          "风扇",
+          "ON",
+          "OFF",
+          "超过",
+          "低于",
+          "大于",
+          "小于",
+          "未超过",
+          "未低于"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "OFF",
+          "condition": "如果温度低于20度就关闭风扇"
+        },
+        "tool_result": {
+          "success": true,
+          "executed": false,
+          "device_id": "fan_01",
+          "command": "OFF",
+          "message": "当前温度 30.0°C，未低于 20.0°C，未执行 OFF 指令",
+          "condition": {
+            "type": "sensor_threshold",
+            "sensor_id": "temp_01",
+            "operator": "<",
+            "threshold": 20.0,
+            "current_value": 30.0,
+            "matched": false
+          }
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C，未低于 20.0°C，未执行 OFF 指令"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "conditional-05",
+      "category": "conditional_control",
+      "message": "温度小于18度时关闭风扇",
+      "reply": "当前温度 30.0°C，未低于 18.0°C，未执行 OFF 指令",
+      "latency_ms": 36.3,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "OFF",
+        "keywords": [
+          "温度",
+          "风扇",
+          "ON",
+          "OFF",
+          "超过",
+          "低于",
+          "大于",
+          "小于",
+          "未超过",
+          "未低于"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "OFF",
+          "condition": "温度小于18度时关闭风扇"
+        },
+        "tool_result": {
+          "success": true,
+          "executed": false,
+          "device_id": "fan_01",
+          "command": "OFF",
+          "message": "当前温度 30.0°C，未低于 18.0°C，未执行 OFF 指令",
+          "condition": {
+            "type": "sensor_threshold",
+            "sensor_id": "temp_01",
+            "operator": "<",
+            "threshold": 18.0,
+            "current_value": 30.0,
+            "matched": false
+          }
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C，未低于 18.0°C，未执行 OFF 指令"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    },
+    {
+      "id": "conditional-06",
+      "category": "conditional_control",
+      "message": "如果温度超过30度再打开风扇",
+      "reply": "当前温度 30.0°C，未超过 30.0°C，未执行 ON 指令",
+      "latency_ms": 11.9,
+      "expected": {
+        "action": "control",
+        "target": "fan_01",
+        "command": "ON",
+        "keywords": [
+          "温度",
+          "风扇",
+          "ON",
+          "OFF",
+          "超过",
+          "低于",
+          "大于",
+          "小于",
+          "未超过",
+          "未低于"
+        ]
+      },
+      "trace": {
+        "intent": {
+          "action": "control",
+          "target_device": "fan_01",
+          "command": "ON",
+          "condition": "如果温度超过30度再打开风扇"
+        },
+        "tool_result": {
+          "success": true,
+          "executed": false,
+          "device_id": "fan_01",
+          "command": "ON",
+          "message": "当前温度 30.0°C，未超过 30.0°C，未执行 ON 指令",
+          "condition": {
+            "type": "sensor_threshold",
+            "sensor_id": "temp_01",
+            "operator": ">",
+            "threshold": 30.0,
+            "current_value": 30.0,
+            "matched": false
+          }
+        },
+        "tool_success": true,
+        "final_answer": "当前温度 30.0°C，未超过 30.0°C，未执行 ON 指令"
+      },
+      "intent_ok": true,
+      "tool_success": true,
+      "keyword_hit": true,
+      "task_success": true
+    }
+  ]
+}
